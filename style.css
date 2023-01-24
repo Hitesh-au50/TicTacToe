@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bree+Serif&family=Libre+Baskerville&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Bree Serif', serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+html {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.button-option {
+    /* background: #ffffff; */
+    background-image: radial-gradient(circle 759px at -6.7% 50%, rgba(80, 131, 73, 1) 0%, rgba(140, 209, 131, 1));
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    /* color: #d161ff; */
+    color: #24243e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.5);
+    cursor: pointer;
+}
+
+.button-option:hover {
+    background: #379237;
+    transform: scale(1.05);
+}
+
+#restart {
+    margin-top: 2em;
+    font-size: 1.2rem;
+    padding: 1em;
+    border-radius: 8px;
+    /* background-color: #0a0027; */
+    background-image: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background: #F96666;
+    transform: scale(0.9);
+    color: white;
+    border: 2px solid white;
+}
+
+.popup {
+    /* background: linear-gradient(135deg,#8052ec,#d161ff);    */
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: centre;
+    align-items: center;
+    gap: 1em;
+    font-size: 12vmin;
+    z-index: 2;
+    flex-direction: column;
+}
+
+#new-game {
+    padding: 0.5em 1em;
+    background-color: #205295;
+    border: 3px solid white;
+    font-size: 0.6em;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    border-radius: 0.2em;
+    background: none;
+
+}
+
+#new-game:hover {
+    background-color: #205295;
+    font-family: 'Bree Serif', serif;
+}
+
+#message {
+    color: #2C74B3;
+    text-align: center;
+    font-size: 1em;
+
+
+}
+
+.popup.hide {
+    display: none;
+
+}
+
+footer {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
